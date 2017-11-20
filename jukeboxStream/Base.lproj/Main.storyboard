@@ -1,24 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bX4-FY-0fi">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Table View Controller-->
+        <scene sceneID="WXC-ds-oNb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="bX4-FY-0fi" customClass="TableViewController" customModule="jukeboxStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fRq-aN-QJa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="jae-7c-Ulo">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iz1-k0-XkE">
+                                    <rect key="frame" x="79.666666666666671" y="7" width="254.66666666666663" height="50"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="ituneslogo" translatesAutoresizingMaskIntoConstraints="NO" id="atx-Jt-yWw">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTunes Top 10 Songs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-35-Srx">
+                                            <rect key="frame" x="59.999999999999986" y="0.0" width="194.66666666666663" height="50"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="iz1-k0-XkE" secondAttribute="height" multiplier="127:25" id="rsd-SP-wdO"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="iz1-k0-XkE" firstAttribute="centerY" secondItem="jae-7c-Ulo" secondAttribute="centerY" id="L0p-GI-y8G"/>
+                                <constraint firstItem="iz1-k0-XkE" firstAttribute="centerX" secondItem="jae-7c-Ulo" secondAttribute="centerX" id="zSc-Nt-lFk"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="top10" rowHeight="103" id="TbI-m6-mwQ" customClass="CustomTableViewCell" customModule="jukeboxStream" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="414" height="103"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TbI-m6-mwQ" id="C3K-EQ-P3z">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="102.66666666666667"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="VJV-W1-iWs">
+                                            <rect key="frame" x="29" y="6.6666666666666643" width="356" height="90"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Fx-6r-3Zs">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="5Fx-6r-3Zs" secondAttribute="height" multiplier="1:1" id="eMz-KA-FhK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-0u-MiI">
+                                                    <rect key="frame" x="105" y="19.666666666666664" width="251" height="50.999999999999993"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnD-FQ-M4T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="251" height="21.666666666666668"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmb-GA-VpU">
+                                                            <rect key="frame" x="0.0" y="36.666666666666671" width="251" height="14.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VJV-W1-iWs" firstAttribute="leading" secondItem="C3K-EQ-P3z" secondAttribute="leading" constant="29" id="1Yi-T8-68f"/>
+                                        <constraint firstItem="VJV-W1-iWs" firstAttribute="centerY" secondItem="C3K-EQ-P3z" secondAttribute="centerY" id="ACC-TP-csh"/>
+                                        <constraint firstItem="VJV-W1-iWs" firstAttribute="centerX" secondItem="C3K-EQ-P3z" secondAttribute="centerX" id="BzX-je-sfk"/>
+                                        <constraint firstItem="VJV-W1-iWs" firstAttribute="top" secondItem="C3K-EQ-P3z" secondAttribute="top" constant="6.6699999999999999" id="N4r-ZE-asb"/>
+                                        <constraint firstItem="VJV-W1-iWs" firstAttribute="top" secondItem="C3K-EQ-P3z" secondAttribute="top" constant="6.6699999999999999" id="YEv-sr-8w4"/>
+                                        <constraint firstAttribute="trailing" secondItem="VJV-W1-iWs" secondAttribute="trailing" constant="29" id="jvg-cd-ZNI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="albumCover" destination="5Fx-6r-3Zs" id="Fzn-g4-z26"/>
+                                    <outlet property="singerName" destination="Jmb-GA-VpU" id="3nv-sH-Gzn"/>
+                                    <outlet property="songName" destination="UnD-FQ-M4T" id="7O7-JR-Cid"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bX4-FY-0fi" id="wig-5Q-9OP"/>
+                            <outlet property="delegate" destination="bX4-FY-0fi" id="HGs-GM-S4V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3oX-nV-iab"/>
+                    <connections>
+                        <segue destination="vab-Do-vcD" kind="show" identifier="iTunes" id="Sdh-uV-i8T"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ2-Jh-Gra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1551" y="86"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="vWb-gw-9Ky">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="vab-Do-vcD" customClass="WebViewController" customModule="jukeboxStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gR-md-VVZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ELa-sT-Vla"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cd5-VF-x05">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C73-Zo-rnk">
+                                <rect key="frame" x="0.0" y="70" width="414" height="680"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C73-Zo-rnk" secondAttribute="height" multiplier="207:340" id="mdh-rv-na9"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8W-ou-HaR">
+                                <rect key="frame" x="20" y="28" width="56" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="vab-Do-vcD" eventType="touchUpInside" id="KF3-B0-6bK"/>
+                                    <segue destination="bX4-FY-0fi" kind="show" identifier="iTunes2" id="8qX-ns-zyA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="C73-Zo-rnk" secondAttribute="trailing" id="4dz-ZG-Qkf"/>
+                            <constraint firstItem="C73-Zo-rnk" firstAttribute="top" secondItem="j8W-ou-HaR" secondAttribute="bottom" constant="8" id="8rm-lY-IrW"/>
+                            <constraint firstItem="j8W-ou-HaR" firstAttribute="leading" secondItem="cd5-VF-x05" secondAttribute="leadingMargin" id="Ckl-3T-m6K"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="j8W-ou-HaR" secondAttribute="trailing" id="Lf0-bk-Con"/>
+                            <constraint firstItem="j8W-ou-HaR" firstAttribute="top" secondItem="3gR-md-VVZ" secondAttribute="bottom" constant="8" id="Ud9-8h-4Hc"/>
+                            <constraint firstItem="C73-Zo-rnk" firstAttribute="leading" secondItem="cd5-VF-x05" secondAttribute="leading" id="cOX-ID-Z98"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="C73-Zo-rnk" id="idM-m7-IKt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCt-B0-i20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566.666666666667" y="85.59782608695653"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ituneslogo" width="50" height="50"/>
+    </resources>
 </document>

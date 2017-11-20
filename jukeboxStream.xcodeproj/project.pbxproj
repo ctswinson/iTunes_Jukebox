@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C111B0E5E169785F6997A4A /* Pods_jukeboxStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D348EAB7CEAB57D3419341F /* Pods_jukeboxStream.framework */; };
+		BF2E4FD61FA3BC8A00E5F1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2E4FD51FA3BC8A00E5F1E0 /* Assets.xcassets */; };
+		BFA050C71FA79DC800E47119 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA050C81FA79DC800E47119 /* AlamofireImage.framework */; };
+		BFA050CA1FA7A24200E47119 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA050C91FA7A24200E47119 /* CustomTableViewCell.swift */; };
 		BFABE78E1FA119CE009F87A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABE78D1FA119CE009F87A3 /* AppDelegate.swift */; };
-		BFABE7901FA119CE009F87A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABE78F1FA119CE009F87A3 /* ViewController.swift */; };
 		BFABE7931FA119CE009F87A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFABE7911FA119CE009F87A3 /* Main.storyboard */; };
-		BFABE7951FA119CE009F87A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFABE7941FA119CE009F87A3 /* Assets.xcassets */; };
 		BFABE7981FA119CE009F87A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFABE7961FA119CE009F87A3 /* LaunchScreen.storyboard */; };
+		BFABE7A31FA12190009F87A3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFABE7A41FA12190009F87A3 /* Alamofire.framework */; };
+		BFC347951FAB957900A65F19 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC347941FAB957900A65F19 /* TableViewController.swift */; };
+		BFC347971FAB962000A65F19 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC347961FAB962000A65F19 /* WebViewController.swift */; };
+		BFEFB84A1FA1637400AB8EB1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFEFB84B1FA1637400AB8EB1 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D348EAB7CEAB57D3419341F /* Pods_jukeboxStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jukeboxStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8C7F4A83F916C418B68AE7 /* Pods-jukeboxStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jukeboxStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-jukeboxStream/Pods-jukeboxStream.release.xcconfig"; sourceTree = "<group>"; };
+		AC96C413FA13A65CC407BEB6 /* Pods-jukeboxStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jukeboxStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-jukeboxStream/Pods-jukeboxStream.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2E4FD51FA3BC8A00E5F1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFA050C81FA79DC800E47119 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA050C91FA7A24200E47119 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		BFABE78A1FA119CE009F87A3 /* jukeboxStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jukeboxStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFABE78D1FA119CE009F87A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFABE78F1FA119CE009F87A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFABE7921FA119CE009F87A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BFABE7941FA119CE009F87A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFABE7971FA119CE009F87A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFABE7991FA119CE009F87A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFABE7A41FA12190009F87A3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC347941FAB957900A65F19 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BFC347961FAB962000A65F19 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BFEFB84B1FA1637400AB8EB1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA050C71FA79DC800E47119 /* AlamofireImage.framework in Frameworks */,
+				BFEFB84A1FA1637400AB8EB1 /* SwiftyJSON.framework in Frameworks */,
+				BFABE7A31FA12190009F87A3 /* Alamofire.framework in Frameworks */,
+				5C111B0E5E169785F6997A4A /* Pods_jukeboxStream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE374AD3FDE3488522162CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA050C81FA79DC800E47119 /* AlamofireImage.framework */,
+				BFEFB84B1FA1637400AB8EB1 /* SwiftyJSON.framework */,
+				BFABE7A41FA12190009F87A3 /* Alamofire.framework */,
+				4D348EAB7CEAB57D3419341F /* Pods_jukeboxStream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFABE7811FA119CE009F87A3 = {
 			isa = PBXGroup;
 			children = (
 				BFABE78C1FA119CE009F87A3 /* jukeboxStream */,
 				BFABE78B1FA119CE009F87A3 /* Products */,
+				E349CA8CDF5E17DFAE3908A2 /* Pods */,
+				0CE374AD3FDE3488522162CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +85,25 @@
 		BFABE78C1FA119CE009F87A3 /* jukeboxStream */ = {
 			isa = PBXGroup;
 			children = (
+				BF2E4FD51FA3BC8A00E5F1E0 /* Assets.xcassets */,
 				BFABE78D1FA119CE009F87A3 /* AppDelegate.swift */,
-				BFABE78F1FA119CE009F87A3 /* ViewController.swift */,
 				BFABE7911FA119CE009F87A3 /* Main.storyboard */,
-				BFABE7941FA119CE009F87A3 /* Assets.xcassets */,
+				BFC347961FAB962000A65F19 /* WebViewController.swift */,
+				BFC347941FAB957900A65F19 /* TableViewController.swift */,
+				BFA050C91FA7A24200E47119 /* CustomTableViewCell.swift */,
 				BFABE7961FA119CE009F87A3 /* LaunchScreen.storyboard */,
 				BFABE7991FA119CE009F87A3 /* Info.plist */,
 			);
 			path = jukeboxStream;
+			sourceTree = "<group>";
+		};
+		E349CA8CDF5E17DFAE3908A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC96C413FA13A65CC407BEB6 /* Pods-jukeboxStream.debug.xcconfig */,
+				7A8C7F4A83F916C418B68AE7 /* Pods-jukeboxStream.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFABE79C1FA119CE009F87A3 /* Build configuration list for PBXNativeTarget "jukeboxStream" */;
 			buildPhases = (
+				16CA863D799E12949CC711FA /* [CP] Check Pods Manifest.lock */,
 				BFABE7861FA119CE009F87A3 /* Sources */,
 				BFABE7871FA119CE009F87A3 /* Frameworks */,
 				BFABE7881FA119CE009F87A3 /* Resources */,
+				C3C3D425C0F3A32B3DDC2338 /* [CP] Embed Pods Frameworks */,
+				24FDDC030D095887BCAE508E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,20 +169,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFABE7981FA119CE009F87A3 /* LaunchScreen.storyboard in Resources */,
-				BFABE7951FA119CE009F87A3 /* Assets.xcassets in Resources */,
+				BF2E4FD61FA3BC8A00E5F1E0 /* Assets.xcassets in Resources */,
 				BFABE7931FA119CE009F87A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16CA863D799E12949CC711FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jukeboxStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24FDDC030D095887BCAE508E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jukeboxStream/Pods-jukeboxStream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3C3D425C0F3A32B3DDC2338 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-jukeboxStream/Pods-jukeboxStream-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-jukeboxStream/Pods-jukeboxStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFABE7861FA119CE009F87A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFABE7901FA119CE009F87A3 /* ViewController.swift in Sources */,
 				BFABE78E1FA119CE009F87A3 /* AppDelegate.swift in Sources */,
+				BFC347951FAB957900A65F19 /* TableViewController.swift in Sources */,
+				BFA050CA1FA7A24200E47119 /* CustomTableViewCell.swift in Sources */,
+				BFC347971FAB962000A65F19 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +377,11 @@
 		};
 		BFABE79D1FA119CE009F87A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC96C413FA13A65CC407BEB6 /* Pods-jukeboxStream.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC5XN3J4ZP;
 				INFOPLIST_FILE = jukeboxStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NMIX6310.jukeboxStream;
@@ -286,9 +393,11 @@
 		};
 		BFABE79E1FA119CE009F87A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8C7F4A83F916C418B68AE7 /* Pods-jukeboxStream.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC5XN3J4ZP;
 				INFOPLIST_FILE = jukeboxStream/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NMIX6310.jukeboxStream;
